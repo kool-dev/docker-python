@@ -5,7 +5,7 @@ Minimal Python Docker image. It`s intended use is for [kool.dev]('https://kool.d
 
 # Avaliable Tags
 
-## 3.9
+## 3.9.7
 
 ## Environment Variables
 
@@ -19,20 +19,20 @@ Minimal Python Docker image. It`s intended use is for [kool.dev]('https://kool.d
 With `docker run`:
 
 ```sh
-docker run -it --rm kooldev/node:14 node -v
+docker run -it --rm python:3.9.7
 ```
 
 With environment variables:
 
 ```sh
-docker run -it --rm -e ASUSER=500 kooldev/node:14 node -v
+docker run -it --rm -e ASUSER=500 python:3.9.7 
 ```
 
 With `docker-compose.yml`:
 
 ```yaml
 app:
-  image: kooldev/node:14
+  image: python:3.9.7
   environment:
     ASUSER: "${$UID}"
 ```
